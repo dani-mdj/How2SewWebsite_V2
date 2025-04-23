@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>How2Sew - Rates</title>
+
+    <meta
+      name="description"
+      content="Rates for private sewing lessons in Ottawa and Gatineau area."
+    />
+    <meta property="og:url" content="https://how2sew.site/rates.html" />
+    <link rel="canonial" href="https://how2sew.site/rates.html" />
+    <meta property="og:title" content="How 2 Sew - Sewing Lesson Rates" />
+    <meta
+      property="og:description"
+      content="Rates for private sewing lessons in Ottawa and Gatineau area."
+    />
+    <meta property="og:image" content="img/ogimg.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <header>
+      <section class="hero">
+        <h1 class="nowrap">How 2 Sew</h1>
+        <h2 class="nowrap">Private Sewing Lessons in Ottawa and Gatineau</h2>
+        <div class="hero__img">
+          <img
+            src="img/hero-sm.jpg"
+            alt="White soft plastic measuring tape on a cutting table."
+            width="2452"
+            height="800"
+          />
+        </div>
+      </section>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="projects.html">My Projects</a></li>
+          <li><a href="rates.html">Rates</a></li>
+          <li><a href="classes.html">Classes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h3>Private Lesson Rates</h3>
+        <table>
+          <caption>
+            Lesson Rates
+          </caption>
+          <thead>
+            <tr>
+              <th>Type of Class/Rental</th>
+              <th>Hourly Cost</th>
+              <th>Minimum Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>In Home Lesson</td>
+              <td>$30.00</td>
+              <td>2 Hours</td>
+            </tr>
+            <tr>
+              <td>Virtual Lesson</td>
+              <td>$30.00</td>
+              <td>1 Hour</td>
+            </tr>
+            <tr>
+              <td>Gatineau Library Lesson</td>
+              <td>$30.00</td>
+              <td>1 Hour*</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <div>
+          <ul>
+            Available Rentals:
+          </ul>
+          <li>Sewing Machine: $5/hour</li>
+          <li>Serger/Overlocker $17/hour</li>
+        </div>
+        <p class="bottom-capt">*Gatineau has max booking time of 2 hours.</p>
+      </section>
+
+      <form action="js/calculate.js">
+        <h4 id="form__heading">Let's Calculate it Together!</h4>
+
+        <div class="form__section">
+          <select name="lessonType" id="lessonType" class="form-opt">
+            <option value="" disabled selected>Preferred Location</option>
+            <option value="hours2">At Client Home</option>
+            <option value="hours1">Virtual Lesson</option>
+            <option value="hours0">Gatineau Library Lesson</option>
+          </select>
+          <br />
+          <input
+            type="checkbox"
+            id="machine"
+            name="machine"
+            class="form-opt"
+            value="5"
+            disabled
+          />
+          <label for="machine" class="form-label">Sewing Machine Rental</label>
+          <br />
+          <input
+            type="checkbox"
+            id="serger"
+            name="serger"
+            class="form-opt"
+            value="15"
+            disabled
+          />
+          <label for="serger" class="form-label">Serger Rental</label>
+          <br />
+
+          <label for="hours1" id="form__hours1_label">Lesson Length </label>
+          <select
+            id="hours1"
+            name="hours1"
+            class="form-opt form__1min"
+            disabled
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select
+            id="hours2"
+            name="hours2"
+            class="form-opt form__2min"
+            disabled
+          >
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select
+            id="hours0"
+            name="hours0"
+            class="form-opt form__2max"
+            disabled
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <label for="hours0">hours</label>
+        </div>
+        <div class="form__section">
+          <h4 class="nowrap">Total Cost Per Session:</h4>
+          <p id="cost"></p>
+        </div>
+        <div id="form__foot">
+          <input type="reset" id="form__button" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div id="copyright">Copyright &copy; CurrentCopyrightYear</div>
+    </footer>
+  </body>
+  <script src="js/app.js"></script>
+  <script src="js/calculate.js"></script>
+</html>

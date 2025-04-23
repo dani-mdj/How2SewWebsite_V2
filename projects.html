@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>How2Sew - Projects</title>
+
+    <meta name="description" content="Sewing projects made by Danielle." />
+    <meta property="og:url" content="https://how2sew.site/projects.html" />
+    <link rel="canonial" href="https://how2sew.site/projects.html" />
+    <meta
+      property="og:title"
+      content="How 2 Sew - Danielle's Favorite Sewing Projects"
+    />
+    <meta
+      property="og:description"
+      content="Sewing projects made by Danielle."
+    />
+    <meta property="og:image" content="img/ogimg.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <header>
+      <section class="hero">
+        <h1 class="nowrap">How 2 Sew</h1>
+        <h2 class="nowrap">Private Sewing Lessons in Ottawa and Gatineau</h2>
+        <div class="hero__img">
+          <img
+            src="img/hero-sm.jpg"
+            alt="White soft plastic measuring tape on a cutting table."
+            width="2452"
+            height="800"
+          />
+        </div>
+      </section>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="projects.html">My Projects</a></li>
+          <li><a href="rates.html">Rates</a></li>
+          <li><a href="classes.html">Classes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h3>My Favorite Projects</h3>
+        <p>Here are some of my favorite projects!</p>
+      </div>
+      <div>
+        <div class="project-container">
+          <img
+            class="img-slides"
+            src="img/wedd.jpg"
+            alt="Danielle wearing a matching set of coulottes and top in light blue."
+          />
+          <img
+            class="img-slides"
+            src="img/pantsinside.png"
+            alt="Paire of handmade jeans on the floor showing off the interior."
+          />
+          <img
+            class="img-slides"
+            src="img/rust.jpg"
+            alt="Danielle wearing rust colored pants and a mushroom patterned shirt."
+          />
+          <img
+            class="img-slides"
+            src="img/bag.jpg"
+            alt="Handmade back pack blue green and white."
+          />
+
+          <img
+            class="img-slides"
+            src="img/rubygold.jpg"
+            alt="Danielle in a handmade outfit blue concord shirt and patterned ruby pants."
+          />
+
+          <div class="slide-nav">
+            <button class="slide-button" onclick="plusDivs(-1)">
+              &#10094; Prev
+            </button>
+            <button class="slide-button" onclick="plusDivs(1)">
+              Next &#10095;
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="copyright">Copyright &copy; CurrentCopyrightYear</div>
+    </footer>
+  </body>
+  <script src="js/app.js"></script>
+  <script src="js/slide.js"></script>
+</html>
