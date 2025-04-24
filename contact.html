@@ -49,10 +49,60 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h3>Contact Danielle To Get Started!</h3>
+      <p class="main__element">Please include the following information:</p>
+      <ul class="main__element">
+        <li>Student name (if child please indicate age range 12-14, 14-17)</li>
+        <li>Level of skill</li>
+        <li>Projects of interest (optional)</li>
+        <li>If you own a sewing machine</li>
+        <li></li>
+      </ul>
+
+      <form
+        class="contact-form"
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="26c92230-71ea-4e91-8708-936908455cd5"
+        />
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="message">Message:</label>
+          <textarea name="message" rows="10" required></textarea>
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+        </div>
+
+        <div class="h-captcha" data-captcha="true"></div>
+
+        <div class="contact-buttons">
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset Form</button>
+        </div>
+      </form>
+    </main>
     <footer>
       <div id="copyright">Copyright &copy; CurrentCopyrightYear</div>
     </footer>
+    <script src="js/captcha.js"></script>
   </body>
   <script src="js/app.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </html>

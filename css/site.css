@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Red+Hat+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Red+Hat+Display:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Red+Hat+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@600&display=swap");
 
 /* ||RESET */
 
@@ -28,16 +27,17 @@ select {
 
 :root {
   /*FONTS */
-  --FF: "Red Hat Display", sans-serif;
+  --FF: "Red Hat Text", sans-serif;
   --FF-HEADING: "Raleway", sans-serif;
   --FW: 400;
-  --FW-HEADING: 800;
-  --FS: clamp(1rem, 2.2vh, 1.5rem);
+  --FW-HEADING: 500;
+  --FS: clamp(1rem, 2.5vh, 2.25rem);
   --FSTY: normal;
 
   --LIGHTGREY: #abb2d3ff;
   --DARK: #0f1733;
   --MEDGREY: #464655ff;
+  --MED: #4e5271ff;
   --LIGHTGREEN: #acc5be;
   --OFFWHITE: #edf5ffff;
   --BGCOLOR: #e2ecff;
@@ -48,6 +48,7 @@ select {
 
   --BORDERS: 1px solid var(--BORDER-COLOR);
   --BORDER-RADIUS: 15px;
+  --BODY-MARGIN: 6rem;
 }
 
 /* || UTILITY CLASSES */
@@ -70,7 +71,7 @@ html {
 
 body {
   color: var(--DARK);
-  background-color: var(--BGCOLOR);
+  background-color: var(--OFFWHITE);
   min-height: 100vh;
   max-width: clamp(900px, 70%, 1200px);
   margin: auto;
@@ -78,13 +79,15 @@ body {
   border-right: var(--BORDERS);
   box-shadow: 0 0 10px var(--BORDER-COLOR);
 }
-
+li {
+  list-style: none;
+}
 /* || NAV BAR */
 
 nav ul {
   list-style-type: none;
   text-align: left;
-  background-color: var(--MEDGREY);
+  background-color: var(--MED);
   margin-left: 0;
   padding-left: 0;
 }
@@ -116,14 +119,14 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(2rem, 8vw, 8rem);
+  font-size: clamp(3rem, 8.3vw, 8rem);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
 h2 {
-  font-size: clamp(1rem, 2.75vw, 2.5rem);
+  font-size: clamp(1.25rem, 2.8vw, 2.5rem);
   position: absolute;
   left: 50%;
   top: 85%;
@@ -144,29 +147,59 @@ h4 {
 }
 
 footer {
-  background-color: var(--MEDGREY);
+  background-color: var(--MED);
   color: var(--OFFWHITE);
   padding: var(--PADDING-TB);
   text-align: center;
 }
 
+.main__element,
 p,
-figure {
+form,
+figure,
+table {
   margin: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: var(--BODY-MARGIN);
+  margin-right: var(--BODY-MARGIN);
+}
+main ul {
+  margin-left: var(--BODY-MARGIN);
+  margin-right: var(--BODY-MARGIN);
+  padding-left: 2rem;
 }
 h3,
 h4 {
-  margin-left: 2rem;
+  margin-left: var(--BODY-MARGIN);
+}
+/* Overlay Images */
+
+.feature {
+  margin-right: var(--BODY-MARGIN);
+  margin-left: var(--BODY-MARGIN);
+  background-color: var(--LIGHTGREEN);
+  padding: 2rem;
+  padding-left: 1.25rem;
+  border-left: 0.75rem solid var(--MEDGREY);
+  box-shadow: 3px 3px 8px var(--MEDGREY);
 }
 
+.overlay-text {
+  font-size: clamp(1.75rem, 2.2vw, 2.5rem);
+  font-family: var(--FF);
+  color: var(--DARK);
+  padding-top: 1rem;
+}
+
+.feature-img {
+  aspect-ratio: 16/5;
+  object-fit: cover;
+}
 /*||BUTTONS and or links as buttons */
 .button-trio {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 4rem;
-  margin: 4rem;
+  gap: 3%;
+  margin: 2% var(--BODY-MARGIN);
 }
 
 .button-container {
@@ -193,13 +226,55 @@ h4 {
   border-radius: 50%;
   align-content: center;
 
-  font-size: clamp(0.5rem, 4.5vw, 2.75rem);
+  font-size: clamp(1.5rem, 4.5vw, 2.75rem);
   font-family: var(--FF);
   font-weight: 600;
   line-height: 0.9em;
   text-shadow: 0 0 10px black;
   text-decoration: none;
   text-align: center;
+}
+
+.button-container a:hover {
+  background-color: transparent;
+}
+
+/*Contact form */
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1em;
+  background-color: var(--LIGHTGREEN);
+  padding: 2rem;
+  width: 60%;
+  border-radius: 0 5%;
+  box-shadow: 2px 2px 15px var(--MEDGREY);
+}
+
+.contact-form div {
+  display: grid;
+}
+
+.contact-buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5%;
+  padding: 0 5%;
+}
+button {
+  background-color: var(--MED);
+  color: var(--OFFWHITE);
+  border-radius: 5px;
+  border: 1px solid var(--MED);
+  box-shadow: inset 0 0 5px #858585;
+  outline: none;
+  padding: 0.25rem;
+}
+button:active {
+  background: var(--MEDGREY);
+  box-shadow: inset 0px 0px 2px #000000;
+  outline: none;
 }
 
 /* project display */
@@ -222,11 +297,53 @@ h4 {
   background-color: var(--MEDGREY);
   border-radius: 6px;
 }
+@media only screen and (max-width: 1080px) {
+  p,
+  .main__element,
+  h3,
+  h4,
+  figure,
+  main ul,
+  table {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  body {
+    width: max(200px 100%);
+    margin: auto;
+  }
+  .button-trio,
+  .feature {
+    margin: 0;
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
 
 @media only screen and (max-width: 700px) {
-  body {
+  /*reset*/
+  p,
+  .main__element,
+  h3,
+  h4,
+  figure,
+  main ul,
+  table {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .contact-form {
     width: 100%;
-    margin: 0px;
+    border-radius: 0;
+  }
+
+  body {
+    width: max(200px 100%);
+    margin: 0;
   }
 
   h1 {
@@ -235,9 +352,18 @@ h4 {
   h2 {
     display: none;
   }
+  .feature {
+    width: 100%;
+  }
+
+  .button-trio,
+  .feature {
+    margin: 0;
+    padding: 0.5rem;
+  }
 
   table {
-    min-width: 200px;
+    width: max(200px 100%);
   }
   table,
   th,
@@ -248,23 +374,29 @@ h4 {
   form {
     border-radius: 0;
     display: block;
-    min-width: 200px;
+    width: max(100px 100%);
+    margin: 0;
   }
 
   .main__rates {
     margin-left: 0.5em;
   }
 
-  .main__more {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+  .button-trio {
     display: block;
-    justify-items: center;
   }
-  .button-55 {
-    margin-bottom: 1rem;
-    padding: 1.75rem;
+  .button-container img,
+  .button-container a {
+    border-radius: 0;
   }
+  .button-container {
+    margin-top: 1rem;
+  }
+  .button-container img {
+    aspect-ratio: 16/4;
+    object-fit: cover;
+  }
+
   .main__about {
     display: block;
   }
