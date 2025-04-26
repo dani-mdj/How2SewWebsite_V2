@@ -79,8 +79,15 @@ body {
   border-right: var(--BORDERS);
   box-shadow: 0 0 10px var(--BORDER-COLOR);
 }
-li {
+ul {
   list-style: none;
+}
+.marked-list {
+  list-style: disc;
+}
+.marked-list li {
+  padding-left: 1rem;
+  line-height: 1.5rem;
 }
 /* || NAV BAR */
 
@@ -134,16 +141,25 @@ h2 {
 }
 
 /* || GENERAL */
-
+h3,
+h4,
+h4 {
+  font-family: var(--FF);
+  font-weight: var(--FW);
+}
 h3 {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   font-size: 1.75rem;
+  margin-top: 1.5rem;
 }
 h4 {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   font-size: 1.15rem;
+}
+h5 {
+  font-size: 1rem;
 }
 
 footer {
@@ -250,6 +266,7 @@ h4 {
   width: 60%;
   border-radius: 0 5%;
   box-shadow: 2px 2px 15px var(--MEDGREY);
+  margin-top: 2rem;
 }
 
 .contact-form div {
@@ -297,6 +314,74 @@ button:active {
   background-color: var(--MEDGREY);
   border-radius: 6px;
 }
+
+/*Cost form*/
+.form-label {
+  padding-left: 0.25em;
+  padding-right: 2em;
+}
+
+.form-opt {
+  margin: 0.75rem;
+}
+
+.cost-form {
+  display: grid;
+  background: var(--LIGHTGREEN);
+  border-left: var(--BORDERS);
+  border-right: var(--BORDERS);
+  border-radius: 15px;
+  box-shadow: 0 0 10px var(--BORDER-COLOR);
+  padding: 1.5em;
+  max-width: 800px;
+  min-width: 500px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+#form__heading {
+  grid-column: span 2;
+  text-align: center;
+  margin: 0;
+}
+
+.form__1min[disabled],
+.form__2min[disabled],
+.form__2max[disabled] {
+  display: none;
+}
+
+#cost {
+  font-size: clamp(2rem, 3.5vh, 3rem);
+}
+.form__section {
+  padding: 0.5rem;
+}
+#form__foot {
+  grid-column: span 2;
+  text-align: center;
+}
+#form__button {
+  padding: 0.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/*Table of Rates*/
+td,
+th {
+  text-align: left;
+}
+table {
+  min-width: 400px;
+  width: 80%;
+}
+.bottom-capt {
+  font-size: 0.75rem;
+  text-align: left;
+  padding-top: 1.5rem;
+}
+
 @media only screen and (max-width: 1080px) {
   p,
   .main__element,
@@ -321,6 +406,18 @@ button:active {
   h2 {
     font-size: 1rem;
   }
+
+  form,
+  .cost-form,
+  .form__section {
+    border-radius: 0;
+    display: block;
+  }
+  .contact-form {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -342,7 +439,7 @@ button:active {
   }
 
   body {
-    width: max(200px 100%);
+    width: 100vw;
     margin: 0;
   }
 
@@ -363,19 +460,32 @@ button:active {
   }
 
   table {
-    width: max(200px 100%);
+    min-width: 200px;
   }
   table,
   th,
   td {
     padding: 0.1em;
+    margin: 0;
+    font-size: 0.75rem;
   }
 
-  form {
+  form,
+  .cost-form,
+  .form__section {
     border-radius: 0;
     display: block;
-    width: max(100px 100%);
     margin: 0;
+    padding: 0;
+  }
+
+  #form__button {
+    padding: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .cost-form {
+    min-width: 200px;
   }
 
   .main__rates {

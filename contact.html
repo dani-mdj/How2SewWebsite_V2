@@ -51,13 +51,17 @@
     </header>
     <main>
       <h3>Contact Danielle To Get Started!</h3>
-      <p class="main__element">Please include the following information:</p>
-      <ul class="main__element">
-        <li>Student name (if child please indicate age range 12-14, 14-17)</li>
-        <li>Level of skill</li>
-        <li>Projects of interest (optional)</li>
-        <li>If you own a sewing machine</li>
-        <li></li>
+      <p class="main__element">
+        My current availability is Thursday and Friday Days, weekends, and
+        evenings. (This can change depending on coursework) <br /><br />
+        Please include the following information:
+      </p>
+      <ul class="marked-list main__element">
+        <li>Student name (if child please indicate age range 12-14, 14-17).</li>
+        <li>Level of skill.</li>
+        <li>Projects of interest (optional).</li>
+        <li>If you own a sewing machine.</li>
+        <li>Preferred time and day for lesson.</li>
       </ul>
 
       <form
@@ -66,17 +70,18 @@
         action="https://api.web3forms.com/submit"
         method="POST"
       >
+        <h5>Contact Form</h5>
         <input
           type="hidden"
           name="access_key"
           value="26c92230-71ea-4e91-8708-936908455cd5"
         />
         <div>
-          <label for="name">Name</label>
+          <label for="name">Name:</label>
           <input type="text" name="name" required />
         </div>
         <div>
-          <label for="email">Email</label>
+          <label for="email">Email:</label>
           <input type="email" name="email" required />
         </div>
 
