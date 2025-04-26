@@ -255,6 +255,45 @@ h4 {
   background-color: transparent;
 }
 
+/*About Page*/
+.grid-container {
+  display: block;
+}
+.grid-element p {
+  margin: 0;
+  padding: 0;
+}
+
+.section-one {
+  display: block;
+  margin: 0 6rem;
+}
+.section-two {
+  display: block;
+  margin: 1rem 6rem;
+  margin-bottom: 5rem;
+}
+.main__quote {
+  font-size: 2rem;
+}
+
+.about__img {
+  width: min(45%, 450px);
+  float: left;
+  padding-right: 1rem;
+}
+.about__img2 {
+  width: min(40%, 400px);
+  float: right;
+  padding-left: 1rem;
+}
+.grid-element {
+  padding: 0 0 1rem 0;
+}
+#final-line {
+  font-size: 1.5rem;
+}
+
 /*Contact form */
 
 .contact-form {
@@ -418,6 +457,11 @@ table {
     border-radius: 0;
     margin: 0;
   }
+  .section-one,
+  .section-two {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -428,7 +472,9 @@ table {
   h4,
   figure,
   main ul,
-  table {
+  table,
+  .section-one,
+  .section-two {
     margin: 0;
     padding: 0.5rem 1rem;
   }
@@ -509,6 +555,12 @@ table {
 
   .main__about {
     display: block;
+  }
+  .about__img,
+  .about__img2 {
+    float: none;
+    width: 100%;
+    padding: 0 0 1rem 0;
   }
 }
 
