@@ -1,0 +1,220 @@
+[
+  {
+    "index": {
+      "ABI": 1,
+      "SMR": 2,
+      "PP": 3,
+      "SS": 4,
+      "PJP": 5,
+      "FP": 6,
+      "FTK": 7,
+      "BQT": 8,
+      "QTR": 9,
+      "SC": 11,
+      "CPA": 10,
+      "FIG": 12
+    }
+  },
+  {
+    "code": "ABI",
+    "name": "Absolute Beginner Introduction",
+    "level": "I've Never Seen a Sewing Machine/I Forgot Everything About This Contraption I Own",
+    "time": "2 hours",
+    "topic": "General Sewing",
+    "description": "This is a great start from nothing class or refresh class. I get how it goes, you get a new tool and sometimes it gets put aside because it was rather intimidating or frustrating. No judgement or shade here, I do it allllll the time. For this lesson I will walk you through your sewing machine and we will test out most the settings and check out all the parts. After looking at the machine we'll do some basic sewing with a straight stitch and then make a simple coaster to practice.",
+    "req-materials": ["Scrap quilting cotton", "All Purpose Thread"],
+    "req-tools": [
+      "Sewing Machine",
+      "bobbin for machine",
+      "all the parts that came with your machine"
+    ]
+  },
+  {
+    "code": "SMR",
+    "name": "Sewing Machine Refresher",
+    "level": "Beginner",
+    "time": "1 hour",
+    "topic": "General Sewing",
+    "description": "Has it been a while since you have used you machine? Need a hand getting back into it? I have your back! Whether it is a regular sewing machine or a serger machine we can do a quick run through to get you back on your feet.",
+    "req-materials": ["Scrap quilting cotton", "All Purpose Thread"],
+    "req-tools": [
+      "Sewing Machine",
+      "bobbin for machine",
+      "all the parts that came with your machine"
+    ]
+  },
+
+  {
+    "code": "PP",
+    "name": "Pieced Placemat or Pillowcase",
+    "level": "Advanced Beginner",
+    "time": "4 hours",
+    "topic": "Quilting",
+    "description": "Using a traditional disappearing block technique we will piece a top then attach a back making it a pillowcase or placemat. The skills built will include, accurate 1/4\" seam allowance, basic quilt piecing",
+    "req-materials": [
+      "2 colours quilt cotton - 1/4m (or fat quarter) each.",
+      "Fat quarter colour for backing.",
+      "White all purpose or light to medium grey thread."
+    ],
+    "req-tools": ["Rotary Cutter", "Cutting Mat", "Sewing Machine"]
+  },
+  {
+    "code": "SS",
+    "name": "Simple Shirt",
+    "level": "Beginner",
+    "time": "3 hours",
+    "topic": "Garment Sewing",
+    "description": "Learn to sew a simple, loose-fitting shirt with minimal shaping. Perfect for beginners looking to create their first wearable garment!",
+    "req-materials": [
+      "Lightweight woven fabric (like cotton lawn or voile)",
+      "Matching all-purpose thread"
+    ],
+    "req-tools": [
+      "Sewing Machine",
+      "Fabric scissors",
+      "Pins or clips",
+      "Measuring tape"
+    ]
+  },
+  {
+    "code": "PJP",
+    "name": "PJ Pants",
+    "level": "Beginner",
+    "time": "3 hours",
+    "topic": "Garment Sewing",
+    "description": "Sew a comfy pair of pajama pants and learn the basics of working with patterns, seams, and elastic waistbands.",
+    "req-materials": [
+      "Woven cotton or flannel fabric",
+      "1-inch elastic",
+      "Matching thread"
+    ],
+    "req-tools": [
+      "Sewing Machine",
+      "Scissors",
+      "Pins or clips",
+      "Measuring tape",
+      "Safety pin"
+    ]
+  },
+  {
+    "code": "FP",
+    "name": "First Project",
+    "level": "Beginner",
+    "time": "2 hours",
+    "topic": "General Sewing",
+    "description": "Brand new to sewing? This first project class is designed to ease you in with a small, confidence-building project like a tote bag or drawstring pouch.",
+    "req-materials": [
+      "Quilting cotton or canvas",
+      "Coordinating thread",
+      "Optional: ribbon or cord for drawstring"
+    ],
+    "req-tools": ["Sewing Machine", "Scissors", "Pins or clips", "Marking tool"]
+  },
+  {
+    "code": "FTK",
+    "name": "First Time With Knit Fabric",
+    "level": "Beginner",
+    "time": "2.5 hours",
+    "topic": "Garment Sewing",
+    "description": "Curious about sewing with stretchy fabric? This class walks you through the basics of handling knits and making a simple project like a t-shirt or headband.",
+    "req-materials": [
+      "Cotton jersey or interlock knit fabric",
+      "Polyester or stretch thread"
+    ],
+    "req-tools": [
+      "Sewing Machine or Serger",
+      "Ballpoint needle",
+      "Pins or clips",
+      "Scissors or rotary cutter"
+    ]
+  },
+  {
+    "code": "BQT",
+    "name": "Beginner Quilt Top",
+    "level": "Beginner",
+    "time": "4 hours",
+    "topic": "Quilting",
+    "description": "Start your quilting journey by learning to piece a simple quilt top. We'll cover cutting, layout, and accurate seams.",
+    "req-materials": ["Coordinating quilting cottons", "Neutral thread"],
+    "req-tools": [
+      "Sewing Machine",
+      "Rotary cutter and mat",
+      "Quilting ruler",
+      "Pins or clips"
+    ]
+  },
+  {
+    "code": "QTR",
+    "name": "Quilted Table Runner",
+    "level": "Beginner",
+    "time": "3.5 hours",
+    "topic": "Quilting",
+    "description": "Make a stylish quilted table runner from start to finish. You'll piece, quilt, and bind in one class session.",
+    "req-materials": ["Quilting cotton", "Batting", "Backing fabric", "Thread"],
+    "req-tools": [
+      "Sewing Machine",
+      "Rotary cutter and mat",
+      "Quilting ruler",
+      "Pins or clips",
+      "Iron"
+    ]
+  },
+  {
+    "code": "CPA",
+    "name": "Common Pant Adjustments",
+    "level": "Intermediate – Familiar with Sewing and Basic Garment Construction",
+    "time": "2 hours",
+    "topic": "Garment Sewing",
+    "description": "Are you having trouble getting those pants to fit right? I have had this problem over and over again. Because of this I've gotten myself pretty experienced in the adjustments for pants to get them looking right and I'm happy to pass on my knowledge to you.",
+    "req-materials": [
+      "Notebook or printed fitting worksheet",
+      "Muslin or pants pattern (optional)"
+    ],
+    "req-tools": [
+      "Measuring tape",
+      "Pencil and ruler",
+      "Paper scissors",
+      "Tracing paper"
+    ]
+  },
+  {
+    "code": "SC",
+    "name": "Sewer's Choice Project",
+    "level": "Confident Beginner and Up",
+    "time": "4+ hours",
+    "topic": "General Sewing",
+    "description": "This is a choose-your-own-adventure style class where you bring a project you're working on or want to start, and I’ll help you with whatever part you’re stuck on—or just be a sewing buddy if you want accountability! This class is great for folks who want guidance on a specific garment, technique, or pattern but don’t need a full lesson plan. I’ll tailor my help to your skill level and goals. Let’s get that UFO (UnFinished Object) moving or help you try something new with confidence.",
+    "req-materials": [
+      "Pattern and fabric for your project",
+      "Matching thread",
+      "Any notions listed on your pattern"
+    ],
+    "req-tools": [
+      "Sewing Machine",
+      "bobbin for machine",
+      "all necessary presser feet and accessories",
+      "any pattern instructions or reference material"
+    ]
+  },
+  {
+    "code": "FIG",
+    "name": "First Intermediate Garment",
+    "level": "Advanced Beginner",
+    "time": "4+ hours",
+    "topic": "Garment Sewing",
+    "description": "You’ve tackled a few beginner projects, maybe some pajama pants or a simple top—and now you’re ready for more! This class is designed to help you make your first intermediate-level garment with confidence. We'll choose a pattern together beforehand (or bring one you have in mind), and I’ll guide you through trickier steps like setting in sleeves, inserting a zipper, or working with facings. It’s all about building your skills and understanding garment construction in a supportive environment.",
+    "req-materials": [
+      "Chosen garment pattern",
+      "Fabric and notions as listed on the pattern",
+      "Matching thread"
+    ],
+    "req-tools": [
+      "Sewing Machine",
+      "bobbin for machine",
+      "all necessary presser feet",
+      "fabric scissors",
+      "pins or clips",
+      "measuring tape"
+    ]
+  }
+]

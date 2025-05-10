@@ -421,6 +421,47 @@ table {
   padding-top: 1.5rem;
 }
 
+/*class page*/
+
+.class-link li a {
+  text-decoration: none;
+  color: var(--DARK);
+}
+.class-link li a:hover {
+  color: var(--LIGHTGREY);
+}
+.class-link {
+  padding-bottom: 1rem;
+}
+
+.main-class {
+  margin: 1.5rem 5rem;
+}
+.main-class h3,
+.main-class h4 {
+  margin: 0;
+}
+
+#class-info {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-bottom: 0.5rem;
+}
+.info-item {
+  border: solid 2px var(--LIGHTGREY);
+  border-radius: 15px;
+  width: 95%;
+  justify-self: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+#description {
+  margin: 0;
+}
+.list-of ul {
+  margin: 0;
+}
+
 @media only screen and (max-width: 1080px) {
   p,
   .main__element,
@@ -474,7 +515,8 @@ table {
   main ul,
   table,
   .section-one,
-  .section-two {
+  .section-two,
+  .main-class {
     margin: 0;
     padding: 0.5rem 1rem;
   }
@@ -553,7 +595,8 @@ table {
     object-fit: cover;
   }
 
-  .main__about {
+  .main__about,
+  .class-info {
     display: block;
   }
   .about__img,
@@ -561,6 +604,9 @@ table {
     float: none;
     width: 100%;
     padding: 0 0 1rem 0;
+  }
+  #class-info {
+    display: block;
   }
 }
 
